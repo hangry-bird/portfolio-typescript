@@ -1,23 +1,21 @@
-//App.tsx
+// App.tsx
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+// Pages
+import Resume from 'src/domains/resume/Page/resumePage';
+
+// Style
+import 'src/assets/Styles/style.scss'
 
 function App() {
-  const [click, setClick] = useState('');
-  const clickButton = () => {
-    setClick('click');
-  };
-
-
-
-  
-
 
   return (
-    <>
-      <p>Hello, World!!!!!</p>
-      <button onClick={clickButton}>button</button>
-      {click}
-    </>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Resume />} />
+      </Routes>
+    </div>
   );
 }
 

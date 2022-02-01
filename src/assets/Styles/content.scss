@@ -1,0 +1,19 @@
+/* Resume */
+.resume-container.aboutMe {
+    .resume-middle-title {
+        h2 {
+            font: {
+                size: 32px;
+                weight: bold;
+            }
+            /* font-family: 'Gmarket-Sans-Bold'; */
+            /* text-align: center; */
+        }
+    }
+    .aboutMe-content {
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
