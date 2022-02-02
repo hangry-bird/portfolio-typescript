@@ -18,6 +18,7 @@
         "strict": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
+        "typeRoots": ["./node_modules/@types", "@types"],
         "baseUrl": ".",
         "paths": {
             "src/*": ["./src/*"]
