@@ -69,9 +69,6 @@ const ResumeSkill = () => {
           </div>
           <div className='skill-box'></div>
         </div>
-
-        <div></div>
-        <div></div>
       </div>
     </div>
   );

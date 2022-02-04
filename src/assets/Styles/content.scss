@@ -48,4 +48,55 @@
             }
         }
     }
+    .resume-container.experience {
+
+        .experience-area{
+            .experience-title{
+                h2 {
+                    font-weight: bold;
+                }
+                .careerEriod{
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                .position{
+                    color:#939393;
+                    text-align: center;
+                }
+            }
+            .experience-project{
+                .description{
+                    label{
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .resume-container.tmi {
+        .hobby-area{
+            .hobby-wrap{
+                .hobby-box{
+                   img{
+                       width: 30px;
+                       height: 30px;
+                   }
+                   label{
+                       font-size: 20px;
+                       font-weight: bold;
+                   }
+                }
+            }
+        }
+    }
+    .resume-container.footer{
+        .footer-area{
+            label{
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+    }
 }

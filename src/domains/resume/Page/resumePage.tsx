@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import ResumeTitle from '../Container/resumeTitle';
 import ResumeAboutMe from '../Container/resumeAboutMe';
 import ResumeSkill from '../Container/resumeSkill';
+import ResumeExperience from '../Container/resumeExperience';
+import ResumeTMI from '../Container/resumeTMI';
+import ResumeFooter from '../Container/resumeFooter';
 
 const ResumePage = () => {
 
@@ -11,6 +14,9 @@ const ResumePage = () => {
         <ResumeTitle />
         <ResumeAboutMe />
         <ResumeSkill />
+        <ResumeExperience />
+        <ResumeTMI />
+        <ResumeFooter />
     </div>
   );
 }
