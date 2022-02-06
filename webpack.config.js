@@ -10,7 +10,7 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: '[name].[contenthash].js',
     chunkFilename: '[name].bundle.js',
-    publicPath: '/',
+    publicPath: './',
   },
   module: {
     rules: [
@@ -55,9 +55,20 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.scss$/,
+        test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      // {
+      //   test: /\.s[ac]ss$/i,
+      //   use: [
+      //     // Creates `style` nodes from JS strings
+      //     "style-loader",
+      //     // Translates CSS into CommonJS
+      //     "css-loader",
+      //     // Compiles Sass to CSS
+      //     "sass-loader",
+      //   ],
+      // },
     ]
   },
   resolve: {
