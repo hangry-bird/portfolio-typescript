@@ -34,19 +34,19 @@ const ResumeExperience = () => {
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>React 기반의 컴포넌트 구조와 Redux를 이용한 상태관리 도입을 통한 Front-End 설계</label></p>
+                  <p><span>React 기반의 컴포넌트 구조와 Redux를 이용한 상태관리 도입을 통한 Front-End 설계</span></p>
                 </div>
               </div>
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>Node.js의 Express Framework를 이용하여 API 초기 구조 설계 및 개발</label></p>
+                  <p><span>Node.js의 Express Framework를 이용하여 API 초기 구조 설계 및 개발</span></p>
                 </div>
               </div>
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>Android Native의 WebView를 이용해 모바일 페이지와 Firebase를 연동하여 App Push 기능 구현</label></p>
+                  <p><span>Android Native의 WebView를 이용해 모바일 페이지와 Firebase를 연동하여 App Push 기능 구현</span></p>
                 </div>
               </div>
             </div>
@@ -60,13 +60,13 @@ const ResumeExperience = () => {
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>네트워크 장비의 Flow Data(sFlow), Syslog 데이터에 대한 전처리 로직 개발</label></p>
+                  <p><span>네트워크 장비의 Flow Data(sFlow), Syslog 데이터에 대한 전처리 로직 개발</span></p>
                 </div>
               </div>
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>Windows, Linux 서버들의 Process, Service 목록 수집 후 DB 저장 및 웹 표출</label></p>
+                  <p><span>Windows, Linux 서버들의 Process, Service 목록 수집 후 DB 저장 및 웹 표출</span></p>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ const ResumeExperience = () => {
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>pixi.js 라이브러리를 사용하여 전송장비에 대한 유니트 화면을 웹 사이트에서 시각화</label></p>
+                  <p><span>pixi.js 라이브러리를 사용하여 전송장비에 대한 유니트 화면을 웹 사이트에서 시각화</span></p>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@ const ResumeExperience = () => {
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>Ant D-Tree에서 사용자가 Node를 Load할 때에만 데이터를 조회하여 성능 개선</label></p>
+                  <p><span>Ant D-Tree에서 사용자가 Node를 Load할 때에만 데이터를 조회하여 성능 개선</span></p>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const ResumeExperience = () => {
               <div className='description-box'>
                 <span>-</span>
                 <div className='description'>
-                  <p><label>전송장비 유니트 실장도를 웹 사이트에서 사용자가 관제 및 관리할 수 있도록 기능 개발</label></p>
+                  <p><span>전송장비 유니트 실장도를 웹 사이트에서 사용자가 관제 및 관리할 수 있도록 기능 개발</span></p>
                 </div>
               </div>
             </div>

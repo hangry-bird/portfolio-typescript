@@ -22,7 +22,7 @@
         .aboutMe-content {
             .aboutMe-privacy{
                 > img {
-                    width: 120px;
+                    width: 102px;
                     height: 120px;
                     margin-right: 32px;
                 }
@@ -30,17 +30,29 @@
             .aboutMe-contact {
                 > div {
                     align-items: center;
-                    img {
+                    img{
                         width: 32px;
                         height: 32px;
                     }
-                    label {
+                    span, a {
                         margin-left: 20px;
+                        color: #000;
                         font: {
                             size: 24px;
                             // weight: bold;
                         }
                     }
+                    img.copy{
+                        width: 18px;
+                        height: 20px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+                > div:not(:first-child) a:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                    font-weight: bold;
                 }
             }
             .about-introduction{
@@ -67,7 +79,7 @@
             }
             .experience-project{
                 .description{
-                    label{
+                    span{
                         font-size:14px;
                     }
                 }
@@ -79,14 +91,22 @@
         .hobby-area{
             .hobby-wrap{
                 .hobby-box{
-                   img{
-                       width: 30px;
-                       height: 30px;
-                   }
                    label{
                        font-size: 20px;
                        font-weight: bold;
                    }
+                }
+                .hobby-box.bicycle{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .hobby-box.movie{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -97,6 +117,9 @@
                 font-size: 22px;
                 font-weight: bold;
             }
+        }
+        :hover{
+            cursor: pointer;
         }
     }
 }
