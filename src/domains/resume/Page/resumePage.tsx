@@ -6,6 +6,7 @@ import ResumeSkill from '../Container/resumeSkill';
 import ResumeExperience from '../Container/resumeExperience';
 import ResumeTMI from '../Container/resumeTMI';
 import ResumeFooter from '../Container/resumeFooter';
+import Visible from "@egjs/visible";
 
 const ResumePage = () => {
 

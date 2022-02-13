@@ -17,6 +17,10 @@
                 weight: bold;
             }
         }
+        img {
+            width: 40px;
+            // height: 40px;
+        }
     }
     .resume-container.aboutMe {
         .aboutMe-content {
@@ -53,6 +57,9 @@
                     cursor: pointer;
                     text-decoration: underline;
                     font-weight: bold;
+                }
+                > div:last-child {
+                    min-width: 360px;
                 }
             }
             .about-introduction{

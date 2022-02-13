@@ -7,10 +7,10 @@ module.exports = {
   mode: 'production',
   entry: './src/index.tsx',
   output: {
-    path: path.join(__dirname, 'build'),
     filename: '[name].[contenthash].js',
     chunkFilename: '[name].bundle.js',
     publicPath: './',
+    path: path.join(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -21,17 +21,17 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/, //폰트 파일이 로더될 수 있도록 함
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'fonts/[name]-[hash].[ext]',
-            },
-          },
-        ],
-      },
+      // {
+      //   test: /\.(woff|woff2|eot|ttf|otf)$/, //폰트 파일이 로더될 수 있도록 함
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: 'fonts/[name]-[hash].[ext]',
+      //       },
+      //     },
+      //   ],
+      // },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: {
@@ -83,6 +83,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),
-    new MiniCssExtractPlugin({ filename: "css/styles.css" }),
+    new MiniCssExtractPlugin({ filename: "css/styles.scss" }),
 ],
 }
