@@ -1,13 +1,14 @@
 //webpack.config.js
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: 'production',
   entry: './src/index.tsx',
   output: {
-    filename: '[name].[contenthash].js',
+    // filename: '[name].[contenthash].js',
+    filename: 'main.js',
     chunkFilename: '[name].bundle.js',
     publicPath: './',
     path: path.join(__dirname, 'build'),
@@ -21,24 +22,26 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
-      // {
-      //   test: /\.(woff|woff2|eot|ttf|otf)$/, //폰트 파일이 로더될 수 있도록 함
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: 'fonts/[name]-[hash].[ext]',
-      //       },
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/, //폰트 파일이 로더될 수 있도록 함
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'fonts/[name].[ext]',
+              // name: 'fonts/[name]-[hash].[ext]',
+            },
+          },
+        ],
+      },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: {
           loader: 'url-loader',
           options: {
             limit: false,
-            name: 'images/[name]-[hash].[ext]',
+            // name: 'images/[name]-[hash].[ext]',
+            name: 'images/[name].[ext]',
           },
         },
       },
@@ -57,6 +60,7 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        // use: ["css-loader", "sass-loader"],
       },
       // {
       //   test: /\.s[ac]ss$/i,
@@ -82,7 +86,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './public/index.html' }),
+    // new HtmlWebpackPlugin({ template: './public/index.html' }),
     new MiniCssExtractPlugin({ filename: "css/styles.scss" }),
 ],
 }
